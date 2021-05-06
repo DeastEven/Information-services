@@ -1,0 +1,151 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 10mm;
+  font-size: 30px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+body {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 0;
+}
+
+.container {
+  max-width: 1580px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.btnanimtada {
+  animation-duration: 1s;
+  animation-timing-function: ease;
+}
+.btnanimtada:hover {
+  animation-name: Tada;
+}
+@keyframes Tada {
+  0% {
+    transform: scale(1);
+  }
+  10%, 20% {
+    transform: scale(0.9) rotate(-3deg);
+  }
+  30%, 50%, 70%, 90% {
+    transform: scale(1.1) rotate(3deg);
+  }
+  40%, 60%, 80% {
+    transform: scale(1.1) rotate(-3deg);
+  }
+  100% {
+    transform: scale(1) rotate(0);
+  }
+}
+
+.btnanimhide {
+  color: #fff;
+  position: relative;
+}
+.btnanimhide:hover {
+  animation: hide 0.5s ease-in-out 0s infinite alternate both;
+}
+@keyframes hide {
+  0% {
+    top: 0;
+    box-shadow: -1px -1px 3px #000;
+  }
+  50% {
+    top: -2px;
+    box-shadow: 1px 1px 3px #000;
+  }
+  100% {
+    top: 2px;
+    box-shadow: 3px 3px 15px #000;
+  }
+}
